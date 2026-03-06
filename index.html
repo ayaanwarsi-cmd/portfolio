@@ -2,264 +2,1001 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ayaan Khan Maujpur - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+
+  <!-- ✅ PRIMARY SEO META TAGS -->
+  <title>NexaWeb by Ayaan | Web Design & Development Agency in Delhi</title>
+  <meta name="description" content="NexaWeb by Ayaan — Premium web design & development for local businesses in Delhi. Websites for cafes, salons, gyms, clinics & more. Fast. Affordable. Professional." />
+  <meta name="keywords" content="web design Delhi, website development Delhi, affordable website Delhi, website for small business Delhi, cafe website, salon website, gym website, local business website India, NexaWeb, Ayaan Khan Warsi" />
+  <meta name="author" content="Ayaan Khan Warsi" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nexaweb.in/" />
+
+<!-- ✅ FAVICON (SVG inline) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23080c10'/><rect width='64' height='64' rx='14' fill='url(%23g)' opacity='.15'/><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2300e5ff'/><stop offset='1' stop-color='%237c3aed'/></linearGradient></defs><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-weight='900' font-size='28' fill='%2300e5ff'>N</text></svg>" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23080c10'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-weight='900' font-size='28' fill='%2300e5ff'>N</text></svg>" />
+
+
+  <!-- ✅ OPEN GRAPH (Social Media Preview) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NexaWeb by Ayaan | Web Design Delhi" />
+  <meta property="og:description" content="Premium websites for local businesses in Delhi. Cafes, salons, gyms & more. Affordable pricing starting ₹3,000." />
+  <meta property="og:url" content="https://nexaweb.in/" />
+  <meta property="og:site_name" content="NexaWeb by Ayaan" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- ✅ TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NexaWeb by Ayaan | Web Design Delhi" />
+  <meta name="twitter:description" content="Premium websites for local businesses in Delhi starting at ₹3,000." />
+
+  <!-- ✅ LOCAL BUSINESS SCHEMA (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "NexaWeb by Ayaan",
+    "description": "Web design and development agency in Delhi specializing in websites for local businesses.",
+    "url": "https://nexaweb.in",
+    "telephone": "+91-XXXXXXXXXX",
+    "email": "ayaan@nexaweb.in",
+    "founder": {
+      "@type": "Person",
+      "name": "Ayaan Khan Warsi"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Delhi",
+      "addressRegion": "Delhi",
+      "addressCountry": "IN"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Delhi"
+    },
+    "priceRange": "₹₹",
+    "serviceType": ["Web Design", "Web Development", "SEO", "Website Maintenance"],
+    "sameAs": [
+      "https://www.linkedin.com/in/ayaankhanwarsi",
+      "https://www.instagram.com/nexaweb"
+    ]
+  }
+  </script>
+
+  <!-- ✅ PERSON SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ayaan Khan Warsi",
+    "jobTitle": "Web Developer & Designer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "NexaWeb by Ayaan"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Delhi",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+
+  <!-- ✅ FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Orbitron', sans-serif;
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #080c10;
+      --bg2: #0d1117;
+      --bg3: #111820;
+      --accent: #00e5ff;
+      --accent2: #7c3aed;
+      --accent-glow: rgba(0, 229, 255, 0.18);
+      --text: #e8edf2;
+      --muted: #7a8899;
+      --border: rgba(0,229,255,0.12);
+      --card: rgba(255,255,255,0.03);
+      --radius: 16px;
+      --font-head: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
     }
 
+    html { scroll-behavior: smooth; }
+
     body {
-      background: radial-gradient(ellipse at center, #0f0f0f 0%, #050505 100%);
-      color: #fff;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
       overflow-x: hidden;
     }
 
-    header {
-      padding: 30px 8%;
+    /* SCROLLBAR */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 6%;
+      background: rgba(8,12,16,0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: var(--font-head);
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent); }
+
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.3s;
+      letter-spacing: 0.3px;
+    }
+    .nav-links a:hover { color: var(--accent); }
+
+    .nav-cta {
+      background: var(--accent);
+      color: #000 !important;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-weight: 600 !important;
+      font-size: 0.85rem !important;
+      transition: box-shadow 0.3s, transform 0.2s !important;
+    }
+    .nav-cta:hover { box-shadow: 0 0 20px var(--accent-glow); transform: translateY(-1px); color: #000 !important; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding: 120px 6% 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 70% 40%, rgba(0,229,255,0.07) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 20% 70%, rgba(124,58,237,0.08) 0%, transparent 70%);
+    }
+
+    .hero-grid {
+      position: absolute; inset: 0; z-index: 0;
+      background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+      opacity: 0.4;
+    }
+
+    .hero-content { position: relative; z-index: 1; max-width: 780px; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,229,255,0.08);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 0.78rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 28px;
+      letter-spacing: 0.5px;
+      animation: fadeUp 0.7s ease both;
+    }
+    .hero-badge::before {
+      content: '';
+      width: 7px; height: 7px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--accent);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    h1 {
+      font-family: var(--font-head);
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+      animation: fadeUp 0.8s 0.1s ease both;
+    }
+    h1 .accent { color: var(--accent); }
+    h1 .dim { color: var(--muted); }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 520px;
+      margin-bottom: 40px;
+      line-height: 1.75;
+      font-weight: 300;
+      animation: fadeUp 0.8s 0.2s ease both;
+    }
+
+    .hero-actions {
+      display: flex; gap: 16px; flex-wrap: wrap;
+      animation: fadeUp 0.8s 0.3s ease both;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #000;
+      padding: 14px 32px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px;
+      transition: box-shadow 0.3s, transform 0.2s;
+      font-family: var(--font-head);
+    }
+    .btn-primary:hover { box-shadow: 0 0 30px rgba(0,229,255,0.4); transform: translateY(-2px); }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      padding: 14px 32px;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      transition: border-color 0.3s, color 0.3s;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+    .hero-stats {
+      display: flex; gap: 40px; margin-top: 64px;
+      animation: fadeUp 0.8s 0.4s ease both;
+    }
+    .stat-num {
+      font-family: var(--font-head);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+    .stat-label { font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
+
+    /* ── SECTIONS COMMON ── */
+    section { padding: 100px 6%; }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.8rem, 3.5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .section-sub {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 480px;
+      font-weight: 300;
+      margin-bottom: 60px;
+    }
+
+    /* ── ABOUT ── */
+    #about {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+    }
+
+    .about-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+    }
+
+    .avatar-ring {
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-head);
+      font-size: 2rem;
+      font-weight: 800;
+      color: #000;
+      margin-bottom: 20px;
+      box-shadow: 0 0 30px rgba(0,229,255,0.3);
+    }
+
+    .about-name {
+      font-family: var(--font-head);
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .about-role { color: var(--accent); font-size: 0.85rem; margin-bottom: 16px; }
+    .about-desc { color: var(--muted); font-size: 0.9rem; line-height: 1.7; }
+
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .skill-tag {
+      background: rgba(0,229,255,0.07);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 12px;
+      font-size: 0.75rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .about-text h2 { margin-bottom: 20px; }
+    .about-text p { color: var(--muted); margin-bottom: 16px; font-weight: 300; font-size: 0.97rem; }
+
+    .clients-served {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px;
+    }
+    .client-chip {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.8rem;
+      color: var(--text);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .client-chip span { font-size: 1rem; }
+
+    /* ── SERVICES ── */
+    #services { background: var(--bg); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 20px var(--accent-glow);
+    }
+    .service-card.featured {
+      border-color: rgba(0,229,255,0.3);
+      background: rgba(0,229,255,0.04);
+    }
+    .service-card.featured::after {
+      content: 'POPULAR';
+      position: absolute; top: 16px; right: 16px;
+      background: var(--accent); color: #000;
+      font-size: 0.65rem; font-weight: 700;
+      padding: 3px 10px; border-radius: 4px;
+      letter-spacing: 1px;
+    }
+
+    .service-icon {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .service-name {
+      font-family: var(--font-head);
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .service-desc { color: var(--muted); font-size: 0.88rem; margin-bottom: 20px; line-height: 1.6; }
+    .service-price {
+      font-family: var(--font-head);
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+    .service-price span { font-size: 0.8rem; color: var(--muted); font-weight: 400; font-family: var(--font-body); }
+
+    .service-features { list-style: none; margin-top: 20px; border-top: 1px solid var(--border); padding-top: 20px; }
+    .service-features li {
+      font-size: 0.83rem;
+      color: var(--muted);
+      padding: 5px 0;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .service-features li::before { content: '✓'; color: var(--accent); font-weight: 700; }
+
+    /* ── PORTFOLIO ── */
+    #portfolio { background: var(--bg2); border-top: 1px solid var(--border); }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .portfolio-card {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--bg3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+    }
+    .portfolio-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .portfolio-thumb {
+      height: 200px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .portfolio-thumb.cafe { background: linear-gradient(135deg, #1a0a00, #3d1800); }
+    .portfolio-thumb.salon { background: linear-gradient(135deg, #0a001a, #2d0050); }
+    .portfolio-thumb.gym { background: linear-gradient(135deg, #001a0a, #003d1a); }
+    .portfolio-thumb.clinic { background: linear-gradient(135deg, #00101a, #002a3d); }
+
+    .portfolio-thumb::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent 50%, var(--bg3) 100%);
+    }
+
+    .portfolio-info { padding: 24px; }
+    .portfolio-type { font-size: 0.72rem; color: var(--accent); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px; }
+    .portfolio-name { font-family: var(--font-head); font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+    .portfolio-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .portfolio-tag {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 0.7rem;
+      color: var(--muted);
+    }
+
+    .portfolio-notice {
+      margin-top: 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding: 20px;
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+    }
+    .portfolio-notice strong { color: var(--accent); }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--bg); }
+
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .contact-info h2 { margin-bottom: 16px; }
+    .contact-info p { color: var(--muted); font-size: 0.95rem; margin-bottom: 40px; font-weight: 300; }
+
+    .contact-items { display: flex; flex-direction: column; gap: 16px; }
+    .contact-item {
+      display: flex; align-items: center; gap: 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+    }
+    .contact-icon { font-size: 1.3rem; width: 40px; text-align: center; }
+    .contact-label { font-size: 0.75rem; color: var(--muted); }
+    .contact-value { font-size: 0.9rem; font-weight: 500; color: var(--text); }
+
+    /* FORM */
+    .contact-form { display: flex; flex-direction: column; gap: 16px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group label { font-size: 0.78rem; color: var(--muted); font-weight: 500; letter-spacing: 0.3px; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      outline: none;
+      width: 100%;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-group select option { background: var(--bg3); }
+
+    .form-submit {
+      background: var(--accent);
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      padding: 14px 32px;
+      font-family: var(--font-head);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: box-shadow 0.3s, transform 0.2s;
+      width: 100%;
+      margin-top: 4px;
+    }
+    .form-submit:hover { box-shadow: 0 0 30px rgba(0,229,255,0.4); transform: translateY(-2px); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      padding: 48px 6%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(255, 255, 255, 0.03);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-
-    header h1 {
-      font-size: 26px;
-      color: #0ff;
-      text-shadow: 0 0 10px #0ff;
-    }
-
-    nav a {
-      margin-left: 30px;
-      color: #aaa;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #0ff;
-      text-shadow: 0 0 5px #0ff;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h2 {
-      font-size: 48px;
-      color: #0ff;
-      text-shadow: 0 0 20px #0ff;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: #ccc;
-    }
-
-    .glass-section {
-      margin: 80px 8%;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 20px;
-      padding: 40px;
-      box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
-      border: 1px solid rgba(0, 255, 255, 0.2);
-    }
-
-    .section-title {
-      font-size: 28px;
-      color: #0ff;
-      text-shadow: 0 0 10px #0ff;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-
-    .skills {
-      display: flex;
       flex-wrap: wrap;
       gap: 20px;
-      justify-content: center;
     }
 
-    .skill {
-      background: rgba(255, 255, 255, 0.06);
-      padding: 15px 20px;
-      border-radius: 12px;
-      text-align: center;
-      width: 100px;
-      box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
-      transition: 0.3s;
+    .footer-logo {
+      font-family: var(--font-head);
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .footer-logo span { color: var(--accent); }
+    .footer-copy { color: var(--muted); font-size: 0.82rem; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { color: var(--muted); font-size: 0.82rem; text-decoration: none; transition: color 0.3s; }
+    .footer-links a:hover { color: var(--accent); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
 
-    .skill img {
-      width: 40px;
-      height: 40px;
-      margin-bottom: 8px;
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
-    .skill:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .about-grid, .contact-wrapper { grid-template-columns: 1fr; gap: 40px; }
+      .form-row { grid-template-columns: 1fr; }
+      .hero-stats { gap: 24px; flex-wrap: wrap; }
+      nav .nav-links { display: none; }
     }
-
-    .projects {
-      display: grid;
-      gap: 30px;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .project {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-      transition: 0.3s;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
-    }
-
-    .project h4 {
-      color: #0ff;
-      margin-bottom: 10px;
-      text-shadow: 0 0 5px #0ff;
-    }
-
-    .project p {
-      color: #ccc;
-    }
-
-    .contact-form {
-      max-width: 500px;
-      margin: auto;
-    }
-
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 10px;
-      border: none;
-      background: rgba(255, 255, 255, 0.08);
-      color: #0ff;
-      box-shadow: 0 0 5px rgba(0, 255, 255, 0.2);
-    }
-
-    .contact-form button {
-      background-color: #0ff;
-      color: #000;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .contact-form button:hover {
-      background-color: #00e6e6;
-      box-shadow: 0 0 15px #0ff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: rgba(255, 255, 255, 0.02);
-    }
-
-    .socials a {
-      margin: 0 10px;
-      color: #0ff;
-      font-size: 20px;
-      text-shadow: 0 0 5px #0ff;
-      transition: 0.3s;
-    }
-
-    .socials a:hover {
-      text-shadow: 0 0 15px #0ff;
+    @media (max-width: 600px) {
+      section { padding: 70px 5%; }
+      .hero-actions { flex-direction: column; }
+      footer { flex-direction: column; text-align: center; }
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Ayaan Khan Maujpur</h1>
-  <nav>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<div class="hero">
-  <h2>🚀 Full Stack Developer</h2>
-  <p>Recent B.Tech Graduate | Web Dev & AI Builder | Passion for Code & Creativity</p>
+<div id="loader">
+  <div class="loader-logo">Nexa<span>Web</span></div>
+  <div class="loader-bar"></div>
+  <p>Building your experience...</p>
 </div>
 
-<section class="glass-section" id="skills">
-  <h3 class="section-title">Tech Stack</h3>
-  <div class="skills">
-    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">HTML</div>
-    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">CSS</div>
-    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">JavaScript</div>
-    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">React</div>
-    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node">Node</div>
-    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</div>
-    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">MySQL</div>
-    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">GitHub</div>
-  </div>
-</section>
+  <!-- ── NAV ── -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo">Nexa<span>Web</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+    </ul>
+  </nav>
 
-<section class="glass-section" id="projects">
-  <h3 class="section-title">Projects</h3>
-  <div class="projects">
-    <div class="project">
-      <h4>Shorts Video AI</h4>
-      <p>Built an AI-powered auto-video creator using OpenAI + Python + FFMPEG.</p>
+  <!-- ── HERO ── -->
+  <main>
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Based in Delhi, India • Available for Projects</div>
+      <h1>
+        Websites that<br/>
+        <span class="accent">grow your</span><br/>
+        <span class="dim">business.</span>
+      </h1>
+      <p class="hero-sub">
+        I build fast, modern, SEO-optimized websites for local businesses in Delhi — cafes, salons, gyms, clinics & more. No templates. No WordPress. Just clean professional code.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">🚀 Start Your Project</a>
+        <a href="#portfolio" class="btn-ghost">View My Work →</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">₹3K</div>
+          <div class="stat-label">Starting Price</div>
+        </div>
+        <div>
+          <div class="stat-num">5–7</div>
+          <div class="stat-label">Days Delivery</div>
+        </div>
+        <div>
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Custom Built</div>
+        </div>
+      </div>
     </div>
-    <div class="project">
-      <h4>Auto Portfolio Generator</h4>
-      <p>HTML + Flask tool that builds resumes/portfolios from input fields.</p>
-    </div>
-    <div class="project">
-      <h4>Smart RDP Hosting System</h4>
-      <p>Built custom VPS provisioning system using Node.js and bash scripting.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="glass-section" id="contact">
-  <h3 class="section-title">Contact Me</h3>
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea rows="4" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+  <!-- ── ABOUT ── -->
+  <section id="about" aria-label="About Ayaan">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-card">
+          <div class="avatar-ring">AK</div>
+          <div class="about-name">Ayaan Khan Warsi</div>
+          <div class="about-role">Web Developer & Digital Solutions Expert</div>
+          <div class="about-desc">BCA Student | Passionate about building digital experiences that actually get results for local businesses.</div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SEO</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Delhi</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <span class="section-tag">About Me</span>
+        <h2>Your local web partner in Delhi</h2>
+        <p>I'm Ayaan Khan Warsi, a BCA student and founder of NexaWeb — a web development service built specifically for local Delhi businesses who want a professional online presence without the big agency price tag.</p>
+        <p>I specialize in creating clean, fast, mobile-friendly websites that help your customers find you online. Every website I build is SEO-optimized from day one, so you show up on Google.</p>
+        <p>From cafes to clinics, salons to shops — if you have a local business in Delhi, I can build you the website you deserve.</p>
+        <div class="clients-served">
+          <div class="client-chip"><span>☕</span> Cafes</div>
+          <div class="client-chip"><span>💇</span> Salons</div>
+          <div class="client-chip"><span>🏋️</span> Gyms</div>
+          <div class="client-chip"><span>👗</span> Clothing</div>
+          <div class="client-chip"><span>💊</span> Medical</div>
+          <div class="client-chip"><span>🏪</span> Shops</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <div class="socials">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
+  <!-- ── SERVICES ── -->
+  <section id="services" aria-label="Services and Pricing">
+    <span class="section-tag reveal">Services & Pricing</span>
+    <h2 class="reveal">Simple. Transparent. Affordable.</h2>
+    <p class="section-sub reveal">All websites are custom-built, mobile-responsive, and SEO-ready. No recurring platform fees.</p>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <span class="service-icon">🚀</span>
+        <div class="service-name">Landing Page</div>
+        <div class="service-desc">Perfect for showcasing your business and getting customer inquiries. Single page, maximum impact.</div>
+        <div class="service-price">₹3,000 <span>– ₹8,000</span></div>
+        <ul class="service-features">
+          <li>1-Page Custom Design</li>
+          <li>Mobile Responsive</li>
+          <li>Contact Form</li>
+          <li>Basic SEO Setup</li>
+          <li>Google Maps Integration</li>
+          <li>Delivery in 3–5 Days</li>
+        </ul>
+      </div>
+      <div class="service-card featured reveal">
+        <span class="service-icon">💼</span>
+        <div class="service-name">Business Website</div>
+        <div class="service-desc">Full multi-page website for serious businesses. Everything you need to look professional online.</div>
+        <div class="service-price">₹10,000 <span>– ₹25,000</span></div>
+        <ul class="service-features">
+          <li>5-Page Custom Website</li>
+          <li>Mobile + Tablet Responsive</li>
+          <li>Full SEO Optimization</li>
+          <li>Contact & Inquiry Forms</li>
+          <li>WhatsApp Button Integration</li>
+          <li>Google Analytics Setup</li>
+          <li>Delivery in 5–7 Days</li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-icon">🛒</span>
+        <div class="service-name">E-Commerce Store</div>
+        <div class="service-desc">Start selling online. Product catalog, cart, payment integration for your Delhi business.</div>
+        <div class="service-price">₹25,000<span>+</span></div>
+        <ul class="service-features">
+          <li>Product Catalog</li>
+          <li>UPI / Card Payment</li>
+          <li>Order Management</li>
+          <li>SEO Product Pages</li>
+          <li>Admin Dashboard</li>
+          <li>Delivery in 10–14 Days</li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-icon">🔧</span>
+        <div class="service-name">Monthly Maintenance</div>
+        <div class="service-desc">Keep your website updated, secure and running smoothly every month.</div>
+        <div class="service-price">₹1,500 <span>/ month</span></div>
+        <ul class="service-features">
+          <li>Content Updates</li>
+          <li>Security Monitoring</li>
+          <li>Performance Checks</li>
+          <li>Priority Support</li>
+          <li>Monthly Report</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PORTFOLIO ── -->
+  <section id="portfolio" aria-label="Portfolio">
+    <span class="section-tag reveal">My Work</span>
+    <h2 class="reveal">Projects Built for Local Businesses</h2>
+    <p class="section-sub reveal">Real websites for real Delhi businesses. Each built from scratch with performance and SEO in mind.</p>
+    <div class="portfolio-grid">
+     <!-- Real Project 1 -->
+<div class="portfolio-card reveal">
+  <div class="portfolio-thumb" style="background:linear-gradient(135deg,#0b1628,#1a2a4a); font-size:2rem;">🏛️</div>
+  <div class="portfolio-info">
+    <div class="portfolio-type">Government & Document Services</div>
+    <div class="portfolio-name">Warsi Online Document</div>
+    <div class="portfolio-tags">
+      <span class="portfolio-tag">5-Page Site</span>
+      <span class="portfolio-tag">WhatsApp Forms</span>
+      <span class="portfolio-tag">Local SEO</span>
+      <span class="portfolio-tag">Schema Markup</span>
+    </div>
+    <a href="https://warsionlinedocument.onrender.com" target="_blank" rel="noopener"
+       style="display:inline-block;margin-top:14px;font-size:0.78rem;color:var(--accent);border:1px solid var(--accent);padding:5px 14px;border-radius:6px;">
+      View Live Site →
+    </a>
   </div>
-  <p>© 2025 Ayaan Warsi. All rights reserved.</p>
-</footer>
+</div>
+
+<!-- Real Project 2 -->
+<div class="portfolio-card reveal">
+  <div class="portfolio-thumb" style="background:linear-gradient(135deg,#0a0e1a,#1a2035); font-size:2rem;">✈️</div>
+  <div class="portfolio-info">
+    <div class="portfolio-type">Travel Agency</div>
+    <div class="portfolio-name">Warsi Tour & Travels</div>
+    <div class="portfolio-tags">
+      <span class="portfolio-tag">Single Page</span>
+      <span class="portfolio-tag">Hajj & Umrah</span>
+      <span class="portfolio-tag">FAQ Schema</span>
+      <span class="portfolio-tag">Mobile Ready</span>
+    </div>
+    <a href="https://warsitourandtravels.vercel.app" target="_blank" rel="noopener"
+       style="display:inline-block;margin-top:14px;font-size:0.78rem;color:var(--accent);border:1px solid var(--accent);padding:5px 14px;border-radius:6px;">
+      View Live Site →
+    </a>
+  </div>
+</div>
+    <div class="portfolio-notice reveal">
+  <strong>✅ 2 live client websites delivered</strong> — Both sites are live, SEO-optimized and serving real customers. <a href="#contact" style="color:var(--accent)">Want one for your business? →</a>
+</div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" aria-label="Contact">
+    <div class="contact-wrapper">
+      <div class="contact-info reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Let's build your website</h2>
+        <p>Ready to take your business online? Fill out the form and I'll get back to you within 24 hours with a free quote.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Delhi, India</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <div class="contact-label">WhatsApp</div>
+              <a href="https://wa.me/919213786206" class="contact-value">+91 9213786206</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">ayaan@nexaweb.in</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">⏱️</div>
+            <div>
+              <div class="contact-label">Response Time</div>
+              <div class="contact-value">Within 24 hours</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <form class="contact-form" id="contactForm" action="#" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="Ramesh Sharma" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="business">Business Name</label>
+            <input type="text" id="business" name="business" placeholder="Sharma Cafe, Delhi" />
+          </div>
+          <div class="form-group">
+            <label for="type">Business Type *</label>
+            <select id="type" name="type" required>
+              <option value="" disabled selected>Select your business type</option>
+              <option>Cafe / Restaurant</option>
+              <option>Salon / Beauty</option>
+              <option>Gym / Fitness</option>
+              <option>Clothing / Fashion</option>
+              <option>Medical / Clinic</option>
+              <option>Retail Shop</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Budget Range</label>
+            <select id="budget" name="budget">
+              <option value="" disabled selected>Select your budget</option>
+              <option>₹3,000 – ₹8,000 (Landing Page)</option>
+              <option>₹10,000 – ₹25,000 (Business Site)</option>
+              <option>₹25,000+ (E-Commerce)</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell me about your project</label>
+            <textarea id="message" name="message" placeholder="Describe your business and what you need on your website..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message & Get Free Quote 🚀</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <a href="#hero" class="footer-logo">Nexa<span>Web</span> by Ayaan</a>
+    <p class="footer-copy">© 2025 NexaWeb by Ayaan Khan Warsi · Delhi, India</p>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <!-- ── JS: Scroll Reveal + Form ── -->
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Form submit
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('.form-submit');
+      btn.textContent = '✅ Message Sent! I will contact you within 24 hours.';
+      btn.style.background = '#00c853';
+      btn.disabled = true;
+    });
+
+    // Smooth nav highlight
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 100) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent)' : '';
+      });
+    });
+  </script>
 
 </body>
 </html>
-
